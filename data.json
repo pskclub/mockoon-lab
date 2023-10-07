@@ -94,6 +94,35 @@
       ],
       "enabled": true,
       "responseMode": null
+    },
+    {
+      "uuid": "a2c20cf1-4f1c-4579-b6ae-671e622366a8",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "test",
+      "responses": [
+        {
+          "uuid": "d23dae73-0097-4f8b-8244-de6d679507e1",
+          "body": "{\"message\" : \"NVIP\"}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
     }
   ],
   "rootChildren": [
@@ -108,6 +137,10 @@
     {
       "type": "route",
       "uuid": "6f72616c-7ac0-4c07-aa7a-f3fced10f4e7"
+    },
+    {
+      "type": "route",
+      "uuid": "a2c20cf1-4f1c-4579-b6ae-671e622366a8"
     }
   ],
   "proxyMode": false,
