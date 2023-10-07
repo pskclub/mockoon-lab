@@ -9,14 +9,72 @@
   "folders": [],
   "routes": [
     {
-      "uuid": "9664e903-6df7-4015-8b69-7bc9dfefd812",
+      "uuid": "93b34b2b-ff45-472e-82b5-38ec42931be7",
       "type": "http",
-      "documentation": "",
-      "method": "get",
-      "endpoint": "",
+      "documentation": "Create Session",
+      "method": "post",
+      "endpoint": "api/sessions",
       "responses": [
         {
-          "uuid": "e1748318-6af1-4a8f-b924-b58c8d78c953",
+          "uuid": "51a224fc-e489-43d4-9e15-215389d96f79",
+          "body": "{\n  \"user_id\": \"236e9962-c3e6-46d7-a6ea-d98eef939e89\",\n  \"action\": \"LOCK\",\n  \"seal_id\": \"a6ea-d98eef939e\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "82ffd591-294f-4e62-abe8-78823bee4091",
+      "type": "http",
+      "documentation": "Register",
+      "method": "post",
+      "endpoint": "api/devices",
+      "responses": [
+        {
+          "uuid": "47919086-bf7b-483a-beeb-55d10f308203",
+          "body": "{\n    \"message\": \"BAAAAAgAAADEBAgANAAAAFgEAADI...\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "647d061a-c828-4614-94ab-9dc2a3e2c592",
+      "type": "http",
+      "documentation": "Delete",
+      "method": "delete",
+      "endpoint": "api/devices/0696457e-ca15-4e50-8f25-6ec5cab09f28",
+      "responses": [
+        {
+          "uuid": "3944fd38-b3c1-4893-a629-7d2cc651dd7c",
           "body": "{}",
           "latency": 0,
           "statusCode": 200,
@@ -38,15 +96,15 @@
       "responseMode": null
     },
     {
-      "uuid": "fd209491-8ef5-4f27-addc-1503b6cd7e3a",
+      "uuid": "14fffcf3-932d-4297-9d22-717bb42a799b",
       "type": "http",
-      "documentation": "",
-      "method": "get",
-      "endpoint": "benz",
+      "documentation": "Login",
+      "method": "post",
+      "endpoint": "api/auth/login",
       "responses": [
         {
-          "uuid": "6f9b1585-187d-4154-b428-4c1d5fda29ac",
-          "body": "{\"message\" : \"hello\"}",
+          "uuid": "b04a5986-c59d-48cd-8d1c-863427336627",
+          "body": "{\n    \"message\": \"BAAAAAgAAADEBAgANAAAAFgEAADI...\"\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -67,15 +125,15 @@
       "responseMode": null
     },
     {
-      "uuid": "6f72616c-7ac0-4c07-aa7a-f3fced10f4e7",
+      "uuid": "37a445ec-db1c-4bb7-9731-486d05cf2cb7",
       "type": "http",
-      "documentation": "",
+      "documentation": "Check Auth",
       "method": "get",
-      "endpoint": "earth",
+      "endpoint": "api/sessions/12f17a98-3e4c-4997-8bf3-772fb958b0ca",
       "responses": [
         {
-          "uuid": "d2ee3490-5a1c-4795-8160-8f0c5e3e36b0",
-          "body": "{\"message\" : \"hello\"}",
+          "uuid": "647ddcef-c7e5-45e4-8fb7-d3caf684ac50",
+          "body": "{\n  \"status\": true\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -96,15 +154,15 @@
       "responseMode": null
     },
     {
-      "uuid": "3eac87e1-dbfa-41be-936e-9dcd31999403",
+      "uuid": "8a520b78-a639-4e08-9016-189b5948c009",
       "type": "http",
-      "documentation": "",
+      "documentation": "List Device",
       "method": "get",
-      "endpoint": "long",
+      "endpoint": "api/devices",
       "responses": [
         {
-          "uuid": "b38a0085-18ba-4190-81aa-06a9307a95df",
-          "body": "{\"msg\" :\"หล่อ\"}",
+          "uuid": "6609d723-a931-4a51-b61b-7bfd2c4cee3b",
+          "body": "{\n    \"id\": \"0696457e-ca15-4e50-8f25-6ec5cab09f28\"\n    \"user_id\": \"236e9962-c3e6-46d7-a6ea-d98eef939e89\",\n    \"name\": \"Pramote-phone\",\n    \"model\": \"iphone 14 promax\",\n    \"os\": \"ios\",\n    \"version\": \"16.2\",\n    \"created_by_id\": \"236e9962-c3e6-46d7-a6ea-d98eef939e89\",\n    \"deleted_by_id\": \"236e9962-c3e6-46d7-a6ea-d98eef939e89\",\n    \"created_at\": \"2022-07-04T10:05:48Z\",\n    \"deleted_at\": \"2022-08-04T10:05:48Z\"\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -125,73 +183,15 @@
       "responseMode": null
     },
     {
-      "uuid": "a5d1e728-1344-441c-9525-92a196591b8c",
+      "uuid": "e75dfb69-ffa1-4863-8920-3479042a5a32",
       "type": "http",
-      "documentation": "",
-      "method": "get",
-      "endpoint": "test",
+      "documentation": "Lock/Unlock Seal",
+      "method": "post",
+      "endpoint": "api/seal",
       "responses": [
         {
-          "uuid": "571fcacc-c109-4af5-a0ab-2859d2c35595",
-          "body": "{\"message\" : \"เด็กเอ็น\"}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "bodyType": "INLINE",
-          "filePath": "",
-          "databucketID": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": true,
-          "crudKey": "id"
-        }
-      ],
-      "enabled": true,
-      "responseMode": null
-    },
-    {
-      "uuid": "2cd4444a-0b6c-4ab6-90d6-7d04bc2126e3",
-      "type": "http",
-      "documentation": "",
-      "method": "get",
-      "endpoint": "pskclub",
-      "responses": [
-        {
-          "uuid": "0f19d56e-1411-457a-833c-7410414d7486",
-          "body": "{\"who\":\"pskclub\"}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "bodyType": "INLINE",
-          "filePath": "",
-          "databucketID": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": true,
-          "crudKey": "id"
-        }
-      ],
-      "enabled": true,
-      "responseMode": null
-    },
-    {
-      "uuid": "cac94f2e-e87d-4c19-b8ea-14454007454e",
-      "type": "http",
-      "documentation": "",
-      "method": "get",
-      "endpoint": "ios",
-      "responses": [
-        {
-          "uuid": "4f6d739b-72aa-4483-a8b5-ef1ed083b516",
-          "body": "{\n  \"sdsdsd\": \"benz\"\n}",
+          "uuid": "21a95ac8-2188-4e9c-861c-d4a8494735bd",
+          "body": "{\n  \"message\": \"BAAAAAgAAADEBAgANAAAAFgEAADI...\"\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -215,31 +215,31 @@
   "rootChildren": [
     {
       "type": "route",
-      "uuid": "9664e903-6df7-4015-8b69-7bc9dfefd812"
+      "uuid": "93b34b2b-ff45-472e-82b5-38ec42931be7"
     },
     {
       "type": "route",
-      "uuid": "fd209491-8ef5-4f27-addc-1503b6cd7e3a"
+      "uuid": "82ffd591-294f-4e62-abe8-78823bee4091"
     },
     {
       "type": "route",
-      "uuid": "6f72616c-7ac0-4c07-aa7a-f3fced10f4e7"
+      "uuid": "647d061a-c828-4614-94ab-9dc2a3e2c592"
     },
     {
       "type": "route",
-      "uuid": "3eac87e1-dbfa-41be-936e-9dcd31999403"
+      "uuid": "14fffcf3-932d-4297-9d22-717bb42a799b"
     },
     {
       "type": "route",
-      "uuid": "a5d1e728-1344-441c-9525-92a196591b8c"
+      "uuid": "37a445ec-db1c-4bb7-9731-486d05cf2cb7"
     },
     {
       "type": "route",
-      "uuid": "2cd4444a-0b6c-4ab6-90d6-7d04bc2126e3"
+      "uuid": "8a520b78-a639-4e08-9016-189b5948c009"
     },
     {
       "type": "route",
-      "uuid": "cac94f2e-e87d-4c19-b8ea-14454007454e"
+      "uuid": "e75dfb69-ffa1-4863-8920-3479042a5a32"
     }
   ],
   "proxyMode": false,
