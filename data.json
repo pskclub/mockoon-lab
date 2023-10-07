@@ -152,6 +152,35 @@
       ],
       "enabled": true,
       "responseMode": null
+    },
+    {
+      "uuid": "2cd4444a-0b6c-4ab6-90d6-7d04bc2126e3",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "pskclub",
+      "responses": [
+        {
+          "uuid": "0f19d56e-1411-457a-833c-7410414d7486",
+          "body": "{\"who\":\"pskclub\"}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
     }
   ],
   "rootChildren": [
@@ -174,6 +203,10 @@
     {
       "type": "route",
       "uuid": "a5d1e728-1344-441c-9525-92a196591b8c"
+    },
+    {
+      "type": "route",
+      "uuid": "2cd4444a-0b6c-4ab6-90d6-7d04bc2126e3"
     }
   ],
   "proxyMode": false,
