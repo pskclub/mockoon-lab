@@ -123,6 +123,35 @@
       ],
       "enabled": true,
       "responseMode": null
+    },
+    {
+      "uuid": "a5d1e728-1344-441c-9525-92a196591b8c",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "test",
+      "responses": [
+        {
+          "uuid": "571fcacc-c109-4af5-a0ab-2859d2c35595",
+          "body": "{\"message\" : \"เด็กเอ็น\"}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
     }
   ],
   "rootChildren": [
@@ -141,6 +170,10 @@
     {
       "type": "route",
       "uuid": "3eac87e1-dbfa-41be-936e-9dcd31999403"
+    },
+    {
+      "type": "route",
+      "uuid": "a5d1e728-1344-441c-9525-92a196591b8c"
     }
   ],
   "proxyMode": false,
