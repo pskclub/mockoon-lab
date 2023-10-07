@@ -96,15 +96,15 @@
       "responseMode": null
     },
     {
-      "uuid": "a2c20cf1-4f1c-4579-b6ae-671e622366a8",
+      "uuid": "3eac87e1-dbfa-41be-936e-9dcd31999403",
       "type": "http",
       "documentation": "",
       "method": "get",
-      "endpoint": "test",
+      "endpoint": "long",
       "responses": [
         {
-          "uuid": "d23dae73-0097-4f8b-8244-de6d679507e1",
-          "body": "{\"message\" : \"NVIP\"}",
+          "uuid": "b38a0085-18ba-4190-81aa-06a9307a95df",
+          "body": "{\"msg\" :\"หล่อ\"}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -140,7 +140,7 @@
     },
     {
       "type": "route",
-      "uuid": "a2c20cf1-4f1c-4579-b6ae-671e622366a8"
+      "uuid": "3eac87e1-dbfa-41be-936e-9dcd31999403"
     }
   ],
   "proxyMode": false,
