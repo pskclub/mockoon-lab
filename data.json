@@ -651,11 +651,11 @@
       "type": "http",
       "documentation": "Test",
       "method": "get",
-      "endpoint": "test",
+      "endpoint": "testtts",
       "responses": [
         {
           "uuid": "6d794d05-d3e7-42a6-9405-4e65a110b402",
-          "body": "{ \"msg\" : \"Nvvvvip\" }",
+          "body": "{ \"message\" : \"Nvvvvip\" }",
           "latency": 0,
           "statusCode": 200,
           "label": "",
